@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Olga-1-9-8-8/TyberryShop.git/static/css/main.14c38534.chunk.css",
-    "main.js": "/Olga-1-9-8-8/TyberryShop.git/static/js/main.e3758a66.chunk.js",
-    "main.js.map": "/Olga-1-9-8-8/TyberryShop.git/static/js/main.e3758a66.chunk.js.map",
-    "runtime-main.js": "/Olga-1-9-8-8/TyberryShop.git/static/js/runtime-main.b7af61d0.js",
-    "runtime-main.js.map": "/Olga-1-9-8-8/TyberryShop.git/static/js/runtime-main.b7af61d0.js.map",
-    "static/css/2.b6803305.chunk.css": "/Olga-1-9-8-8/TyberryShop.git/static/css/2.b6803305.chunk.css",
-    "static/js/2.370eca3e.chunk.js": "/Olga-1-9-8-8/TyberryShop.git/static/js/2.370eca3e.chunk.js",
-    "static/js/2.370eca3e.chunk.js.map": "/Olga-1-9-8-8/TyberryShop.git/static/js/2.370eca3e.chunk.js.map",
-    "index.html": "/Olga-1-9-8-8/TyberryShop.git/index.html",
-    "static/css/2.b6803305.chunk.css.map": "/Olga-1-9-8-8/TyberryShop.git/static/css/2.b6803305.chunk.css.map",
-    "static/css/main.14c38534.chunk.css.map": "/Olga-1-9-8-8/TyberryShop.git/static/css/main.14c38534.chunk.css.map",
-    "static/js/2.370eca3e.chunk.js.LICENSE.txt": "/Olga-1-9-8-8/TyberryShop.git/static/js/2.370eca3e.chunk.js.LICENSE.txt",
-    "static/media/box.7fd9c20e.svg": "/Olga-1-9-8-8/TyberryShop.git/static/media/box.7fd9c20e.svg",
-    "static/media/Footer.module.css": "/Olga-1-9-8-8/TyberryShop.git/static/media/imageFooter.e266a0fe.jpg"
+    "main.css": "/TyberryShop/static/css/main.33bf7dab.chunk.css",
+    "main.js": "/TyberryShop/static/js/main.e3758a66.chunk.js",
+    "main.js.map": "/TyberryShop/static/js/main.e3758a66.chunk.js.map",
+    "runtime-main.js": "/TyberryShop/static/js/runtime-main.c35560f8.js",
+    "runtime-main.js.map": "/TyberryShop/static/js/runtime-main.c35560f8.js.map",
+    "static/css/2.b6803305.chunk.css": "/TyberryShop/static/css/2.b6803305.chunk.css",
+    "static/js/2.fbaadcf8.chunk.js": "/TyberryShop/static/js/2.fbaadcf8.chunk.js",
+    "static/js/2.fbaadcf8.chunk.js.map": "/TyberryShop/static/js/2.fbaadcf8.chunk.js.map",
+    "index.html": "/TyberryShop/index.html",
+    "static/css/2.b6803305.chunk.css.map": "/TyberryShop/static/css/2.b6803305.chunk.css.map",
+    "static/css/main.33bf7dab.chunk.css.map": "/TyberryShop/static/css/main.33bf7dab.chunk.css.map",
+    "static/js/2.fbaadcf8.chunk.js.LICENSE.txt": "/TyberryShop/static/js/2.fbaadcf8.chunk.js.LICENSE.txt",
+    "static/media/box.7fd9c20e.svg": "/TyberryShop/static/media/box.7fd9c20e.svg",
+    "static/media/Footer.module.css": "/TyberryShop/static/media/imageFooter.e266a0fe.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b7af61d0.js",
+    "static/js/runtime-main.c35560f8.js",
     "static/css/2.b6803305.chunk.css",
-    "static/js/2.370eca3e.chunk.js",
-    "static/css/main.14c38534.chunk.css",
+    "static/js/2.fbaadcf8.chunk.js",
+    "static/css/main.33bf7dab.chunk.css",
     "static/js/main.e3758a66.chunk.js"
   ]
 }
