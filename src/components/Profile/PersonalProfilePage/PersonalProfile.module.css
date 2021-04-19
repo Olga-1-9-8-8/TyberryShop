@@ -1,0 +1,128 @@
+
+.personalProfile{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    width: 100%;
+    
+}
+
+.personalProfileData{
+    text-align: left;
+    margin-left: 50px;
+    font-size: 1.4rem;
+}
+.personalProfileFormTitle{
+    font-size: 2.1rem;
+    margin-bottom: 50px;
+}
+.personalEmail{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #be1783;
+    border-radius: 15px;
+    min-height: 180px;
+    margin-bottom: 40px;
+}
+.personalEmailData{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-direction: column;
+}
+.personalEmailDataTitle{
+    font-weight: bold;
+    margin-left: 15px;
+}
+.personalEmailDataMail{
+    margin-top: -57px;
+    margin-left: 16px;
+}
+
+.personalEmailIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+}
+
+.personalSale{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 2px solid #be1783;
+    border-radius: 10px;
+    min-height: 220px;
+    padding: 20px;
+    background-color:#be1683;
+    color: #fff;
+    font-weight: bold;
+}
+
+.personalSaleTitle{
+    margin-bottom: 20px;
+}
+
+.personalSaleResult{
+    font-size: 4rem;
+}
+
+.accountButton{
+    border: 2px solid #bc0f7ff7;
+    background-color: #fff;
+    color: rgba(4, 18, 31, 0.8);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0px;
+    padding: 14px 64px 15px 64px;
+    border-radius: 10px;
+    display: block;
+    transition: 0.2s;
+    margin: 30px auto;
+    width: 100%;
+}
+
+
+.accountButton:hover{
+    background-color: #bc0f7ff7;
+    color: #fff;
+}
+
+.accountButton:focus{
+    outline: none;
+}
+
+.orderWrapper{
+    display: flex;
+    justify-content: center;
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #bc0f7ff7;
+    border-radius: 10px;
+    width: 80%;
+    min-height: 522px;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+.orderTitle{
+    font-weight: bold;
+    margin: 20px;
+}
+.orderText{
+    font-size: 1.1rem;
+    margin: 20px;
+    margin-top:-10px;
+}
+
+.orderText span{
+    font-weight: bold;
+}

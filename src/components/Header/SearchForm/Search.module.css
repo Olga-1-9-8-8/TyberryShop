@@ -1,0 +1,43 @@
+
+.searchForm{
+  margin: 30px;
+  width: 400px;
+  white-space: nowrap;
+  position: relative;
+  transition: .5s ease 0s;
+}
+
+ input {
+  width: 100%;
+  padding: 16px 10px 16px 20px;
+  margin: 0;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 27px;
+  background: rgba(255,255,255,.2);
+  cursor: pointer;
+  transition: background .5s ease 0s;
+}
+
+input:hover {
+  border: none;
+  background: rgba(255,255,255,.5);
+} 
+
+input:focus {
+  color: #000;
+  background: #fff;
+  outline: none;
+  cursor: default;
+}
+.icon{
+  cursor: pointer;
+  position: absolute;
+  left: 85%;
+  top: 30%;
+  transition: .5s ease 0s;
+}
+
+input:focus {
+  color: #000;
+}

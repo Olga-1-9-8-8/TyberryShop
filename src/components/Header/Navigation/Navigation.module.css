@@ -1,0 +1,30 @@
+
+.navWrapper{
+  position: relative;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.cardQuantity{
+    position: absolute;
+    top: 29%;
+    right: 59px;
+    color: #fff;
+    background: #f13e0d;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 13px;
+    line-height: 18px;
+    height: 19px;
+    min-width: 19px;
+    padding: 0 2px;
+    text-align: center;
+
+}

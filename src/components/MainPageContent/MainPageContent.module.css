@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+.main{
+    color:black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.titlePreference{
+    text-align: left;
+    margin: 30px;
+}
+.preferenceTitle{
+    margin-top: 60px;
+    font-size: 1.8rem;
+    text-align: start;
+    margin-bottom: 50px;
+}
+.buttonPreference{
+    position: relative;
+    display: inline-block;
+}
+.wrapperArrow{
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 34px;
+}
+.textBlockWrapper{
+    text-align: start;
+}
+.textBlockTitle{
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.textBlock{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #8b8b8b;
+    margin: 0 0 8px 0;
+    position: relative;
+}
+.textReadMore{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: rgba(4, 18, 31, 0.8);
+    border-bottom: 1px dashed rgba(4, 18, 31, 0.8);
+    display: inline-block;
+    margin-bottom: 40px;
+}

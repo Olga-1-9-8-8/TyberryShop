@@ -1,0 +1,41 @@
+
+
+.profile{
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+
+.profileWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    min-width: 500px;
+}
+
+.profileTitle{
+    font-size: 3rem;
+}
+.errorMessage{
+    font-size: 1.3rem;
+    display: flex;
+    color: red;
+    margin-top: 20px;
+}
+
+.accountMessage{
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+
+}
+.accountMessageTitle{
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: bold;
+    color:#bc0f7ff7;
+}
+
+
+

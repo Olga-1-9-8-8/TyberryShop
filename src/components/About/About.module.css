@@ -1,0 +1,25 @@
+.aboutCompanyTitle{
+    text-align: left;
+    color: black;
+    font-size: 3rem;
+    margin: 40px;
+}
+
+.aboutCompany{
+    display: flex;
+    justify-content: space-around;
+}
+
+.payTermTitle{
+    text-align: left;
+    color: black;
+    font-size: 2rem;
+    margin: 40px;
+    margin-bottom: 60px;
+}
+
+.payTermTitle h4{
+    margin-bottom: 50px;;
+}
+
+

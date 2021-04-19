@@ -1,0 +1,121 @@
+.product{
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #c01d7f5e;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.productPictureWrapper{
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.productPictureWrapper:hover > .productButton{
+  display:block;
+}
+
+.productButton:hover + .productPicture{
+  filter:brightness(0.7);
+}
+
+.productPictureWrapper .productPicture{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.productDiscribe{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.productDiscribeTitle{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.productDiscribeTitle span{
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+.productDiscribeSale{
+  margin-right: 20px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.productDiscribeSaleOldPrice{
+  text-decoration: line-through;
+}
+
+.productDiscribeSaleValue{
+  font-size: 1rem;
+  min-width: 60px;
+  border: 1px solid black;
+  opacity: 0.9;
+  border-radius: 20px;
+  text-align: center;
+}
+.productButton{
+  display: none;
+  position: absolute;
+  opacity: 1;
+  top: 35%;
+  left: 24%;
+  width: 191px;
+  height: 75px;
+  background-color:#bc0f7ff7;
+  box-shadow: 6px 6px 18px 0px #bc0f7ff7;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.productButton:focus{
+  background-color:#fff;
+  box-shadow: 6px 6px 18px 0px #fff;
+  color: #bc0f7ff7;
+  outline: none;
+}
+
+.productButtonAfterClick{
+  display: block;
+  transition: 0.2s;
+  position: absolute;
+  opacity: 1;
+  top: 35%;
+  left: 24%;
+  width: 191px;
+  height: 75px;
+  background-color:#fff;
+  box-shadow: 6px 6px 18px 0px #fff;
+  border-radius: 10px;
+  border: none;
+  color: #bc0f7ff7;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 1000;
+}
+.productButtonAfterClick:hover{
+  background-color:#bc0f7ff7;
+  color: #fff;
+}
+
+.productButtonAfterClick:focus{
+  outline: none;
+}
+
+

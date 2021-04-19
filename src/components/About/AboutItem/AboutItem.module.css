@@ -1,0 +1,24 @@
+.itemAboutCompany{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 360px;
+    width: 20%;
+    padding: 16px 24px;
+    margin-bottom: 32px;
+    box-sizing: content-box;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    transition: 1s;
+   
+}
+
+.itemAboutCompany:hover{
+    cursor: pointer;
+    background: linear-gradient(323deg, #ffd304 2.58%, #bc0f7ff7 99.50%);
+}
+
+.itemAboutCompanyTitle{
+    
+    font-size: 1.7rem;
+}

@@ -1,0 +1,8 @@
+.header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr 4fr;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(285deg, #1c011a -22.42%, #bc0f7ff7 60%);
+}
+

@@ -1,0 +1,54 @@
+.basketItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 32px 20px 46px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.basketItemPrise span{
+    margin-right: 8px;
+}
+
+.basketItemPictureWrapper{
+    width: 200px;
+    height: 200px;
+}
+
+.basketItemPicture{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.basketItemProductTitle{
+    display: flex;
+    align-items: center;
+}
+
+.basketItemProductCounter{
+    display: flex;
+    align-items: center;
+}
+
+.basketItemProductPriceWrapper{
+    min-width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.basketItemProductPriceNew{
+    font-size: 1.5rem;
+}
+
+.basketItemProductPrice{
+    font-size: 1.2rem;
+    text-decoration: line-through;
+}
+
+.basketItemProductDeleteWrapper{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}

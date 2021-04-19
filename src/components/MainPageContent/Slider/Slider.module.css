@@ -1,0 +1,56 @@
+.slider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+
+}
+
+.slider img{
+    width: 100%;
+    height: 495px;
+    cursor: pointer;
+    border-radius: 30px;
+    object-fit: cover; 
+    transition: 0.8s;
+}
+
+.slider img:hover{
+    filter: brightness(1.2)
+}
+
+.lefrArrow{
+    position: absolute;
+    top: 45%;
+    left: 50px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.lefrArrow:hover{
+ color: black;
+ opacity: 0.7;
+ z-index: 10;
+}
+
+
+.rightArrow{
+    position: absolute;
+    top: 45%;
+    right: 50px;
+    opacity: 0.7;
+}
+
+.rightArrow:hover{
+    cursor: pointer;
+    color: black;
+   }
+
+.slide{
+    opacity: 0;
+}
+
+.slide.active{
+    opacity: 1;
+}
