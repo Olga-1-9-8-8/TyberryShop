@@ -9,7 +9,7 @@ import store from './redux/store';
 ReactDOM.render(
   <React.StrictMode>
    <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>     {/*for environments (includes GitHubPages)*/}
         <ScrollToTop />
             <App />
       </BrowserRouter>

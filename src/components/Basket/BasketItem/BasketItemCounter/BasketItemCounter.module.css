@@ -29,6 +29,10 @@
     outline: none;
 }
 
+.basketItemButtonDisable:focus{
+    outline: none;
+}
+
 .basketItemButton:hover{
     border: 2px solid #413b3b1e;
 }
