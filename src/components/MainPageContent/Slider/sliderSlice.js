@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+import img1 from '../../../pictures/slider1.jpg';
+import img2 from '../../../pictures/slider2.jpg';
+import img3 from '../../../pictures/slider3.jpg';
 
 
 
@@ -8,10 +10,10 @@ export const sliderSlice = createSlice({
   name: 'slider',
   initialState: {
     pictures: [
-      {image: "images/slider1.jpg"},
-      {image: "images/slider2.jpg"},
-      {image: "images/slider3.jpg"}
+    img1,img2,img3,
     ]
+    
+
 
   },
   reducers: {

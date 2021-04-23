@@ -8,7 +8,7 @@ import { arrSlider, sliderSlice } from './sliderSlice.js';
 
 
 const Slider = () => {
-
+    
     const slideres = useSelector(arrSlider);
     const [current,setCurrent] = useState(0);
     const length = slideres.length;
@@ -31,9 +31,11 @@ const Slider = () => {
                 <FontAwesomeIcon icon={faArrowCircleLeft} onClick = {previosSlide} className={styles.lefrArrow}  size="2x" color = "rgba(0,0,0,0.3)" />
                
                 {slideres.map((slide, index) => {
+                    
                     return(
                         <div className ={index === current ? 'slide active' : 'slide'} key ={index}>
-                            {index === current && (<img src={slide.image} alt="BigSale"/>)}
+                            {console.log(slide)}
+                            {index === current && (<img src={slide} alt="BigSale"/>)}
                              
                         </div>    
                     )

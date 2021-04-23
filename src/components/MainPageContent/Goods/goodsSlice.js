@@ -217,11 +217,3 @@ export default goodsSlice.reducer
 
 
 
-// ((+a.price < +b.price)? 1: -1)
-// :
-//         e === 'Max'?
-//         (a.price + b.price):
-
-//         (a.id- b.id)
-//       )
-//       )

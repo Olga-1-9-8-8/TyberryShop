@@ -9,9 +9,9 @@ import { arrGoods } from './goodsSlice.js';
 
 
 const Goods = () => {
-
+   
     const goods = useSelector(arrGoods);
-
+   
 
     return (
         <>  
