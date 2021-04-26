@@ -3,6 +3,7 @@
 
 ## Getting started
  Here you can view demo: https://olga-1-9-8-8.github.io/TyberryShop/
+ This app has been created with React at the client's side and firebase for the backend.
  
 ### **How to install on your computer** 💻
 
