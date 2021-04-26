@@ -13,7 +13,7 @@
    npm i
    npm start
 ```
-## Functionality overview
+## Functionality overview:gear:
  
   This application is a eCommerce site called 'TyberryShop'
   
@@ -22,7 +22,9 @@
   -Authenticate users via Firebase (login/signup + logout button)
   
 
-The general page breakdown looks like this:
+## The general page breakdown looks like this: :books:
 
--Home page (URL: / )
--Sign in/Sign up pages (URL: /profile )
+- Home page (URL: /TyberryShop )
+- Sign in/Sign up page (URL: /TyberryShop/profile )
+- About delivery page (URL: /TyberryShop/delivery )
+- Cart page (URL: /TyberryShop/basket )
