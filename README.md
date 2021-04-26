@@ -36,5 +36,4 @@
 ## Work In Progress and will be update weekly,Here Future Updates
  - Responsive Design
  - Integrate Firebase database
-
- -
+ - ...
