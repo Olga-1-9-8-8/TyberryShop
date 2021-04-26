@@ -19,8 +19,12 @@
   
   General functionality:
   
-  -Authenticate users via Firebase (login/signup + logout button)
-  
+  - Authenticate users via Firebase (login/signup + logout button)
+  - Add goods to Cart
+  - Remove goods from Cart
+  - Sort products as cheapest,as most expensive or newest
+  - Open or hide section text
+  - Сreate an order from the shopping cart to profile page
 
 ## The general page breakdown looks like this: :books:
 
@@ -28,3 +32,9 @@
 - Sign in/Sign up page (URL: /TyberryShop/profile )
 - About delivery page (URL: /TyberryShop/delivery )
 - Cart page (URL: /TyberryShop/basket )
+
+## Work In Progress and will be update weekly,Here Future Updates
+ - Responsive Design
+ - Integrate Firebase database
+
+ -
