@@ -1,20 +1,26 @@
 import { useEffect, useState } from "react";
-import app from './../../firebase';
+import { useDispatch, useSelector } from "react-redux";
+import app, { userProfileHandler } from '../../../firebase';
+import { selectCurrentUser, setCurrentUser } from "../../../redux/userSlice.js";
+import PersonalProfile from "../PersonalProfilePage/PersonalProfile.js";
+import { selectOrderValue } from "../PersonalProfilePage/personalProfileSlice.js";
 import Button from "./Button/Button.js";
-import PersonalProfile from "./PersonalProfilePage/PersonalProfile.js";
 import styles from "./Profile.module.css";
 import ProfileInput from "./ProfileInput/ProfileInput.js";
 
 
 
-
 const Profile = () => {
-    const[user, setUser] = useState('');
+
+    const dispatch =  useDispatch();
+    const order = useSelector(selectOrderValue);
+    const userFromState = useSelector(selectCurrentUser); 
+
+
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
-    const [error, setError] = useState('');  
-    const [alreadyHasAccount, setAlreadyHasAccount] = useState(false); 
-    const[emailForAccount,setEmailForAccount] = useState('');
+    const[error, setError] = useState('');  
+    const[alreadyHasAccount, setAlreadyHasAccount] = useState(false); 
 
 
     const cleanInputs = () =>{
@@ -40,8 +46,7 @@ const Profile = () => {
                 case 'auth/wrong-password':
                     setError(error.message);
                     break;
-            }
-            
+            }    
         })
     }
 
@@ -49,6 +54,10 @@ const Profile = () => {
         e.preventDefault();
         cleanErrors();
         app.auth().createUserWithEmailAndPassword(email,password)  //create new user
+        .then((userCredential) =>{
+            const user = userCredential.user // this is new object user
+            userProfileHandler(user,order)  // add new user and his order to firestore
+        })
         .catch(error =>{
             switch(error.code){
                 case 'auth/email-already-in-use':
@@ -67,21 +76,29 @@ const Profile = () => {
     
     }
 
-    const authListener = () => {  //check if user exsist,only then set him
-        app.auth().onAuthStateChanged(user => {
-            if(user){  
-                setEmailForAccount(user.email) 
+    const authListener = () => { //check if user exsist,only then set him
+        app.auth().onAuthStateChanged( async userAuth => { 
+            if(userAuth){  
+                const userRef = await userProfileHandler(userAuth,order);
+                userRef.onSnapshot(snapshot => {   // use it instead of get(take once and forget), take data from firestore that method use becouse we need to listen changes in this document all time
+                   dispatch(setCurrentUser({
+                    id: snapshot.id,   // take id from firestore
+                    ...snapshot.data()   // take other info from firestore
+                   }) )
+                })                   
                 cleanInputs();
-                setUser(user);
             } else {
-                setUser('');
-            }
-        })
+                dispatch(setCurrentUser(userAuth)) //if user not login
+            }}
+        )
     }
 
     useEffect(() => {
         authListener();
-    });
+        return () =>{        //it is very similar as componentWillUnMount
+          authListener()  
+        }
+    },[]);  // [x] -when x value changed , all code inside useEffect re-run 
 
     const changeNameInput = (e) =>{  
         setEmail(e.target.value)
@@ -94,9 +111,9 @@ const Profile = () => {
     return(
         <section className = {styles.profile}>
          
-            {user ?    //if user existes
+            {userFromState ?    //if user existes
 
-            (  <PersonalProfile logOut = {logOutHandler} email = {emailForAccount}/>  
+            (  <PersonalProfile logOut = {logOutHandler} email = {`здесь будет Ваш имейл`}/>  
                    
                 ):(                     //if user not existes
             <div className = {styles.profileWrapper} >

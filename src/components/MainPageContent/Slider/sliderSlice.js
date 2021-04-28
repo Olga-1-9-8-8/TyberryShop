@@ -12,11 +12,10 @@ export const sliderSlice = createSlice({
     pictures: [
     img1,img2,img3,
     ]
-    
-
 
   },
   reducers: {
+    
     previosSlide: state => {
       state.pictures += 1
     },
