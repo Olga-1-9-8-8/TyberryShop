@@ -34,7 +34,6 @@ const Slider = () => {
                     
                     return(
                         <div className ={index === current ? 'slide active' : 'slide'} key ={index}>
-                            {console.log(slide)}
                             {index === current && (<img src={slide} alt="BigSale"/>)}
                              
                         </div>    

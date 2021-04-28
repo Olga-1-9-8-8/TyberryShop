@@ -11,7 +11,7 @@ const Basket = () => {
 
     const dispatch =  useDispatch();
     let history = useHistory();
-    const cartProducts = useSelector(selectCartValue); // получает значение из state + подписка на его обновление
+    const cartProducts = useSelector(selectCartValue); // get value from state + subscribe for updates
 
     const[totalCount, setTotalCount] = useState(0);
     const[totalPrice, setTotalPrice] = useState(0);
@@ -49,7 +49,6 @@ const Basket = () => {
         }
         dispatch(addToOrder(order));
         dispatch(removeAllCarts([]))
-
     }
 
     return (
@@ -105,17 +104,3 @@ const Basket = () => {
 export default Basket;
 
 
-
-
-// const [cartCount,setCartCount] = useState(0);
-
-
-// useEffect( () => {
-//     let count = 0;
-//     cartProducts.forEach(item =>{
-//         count += item.count
-//     })
-//     setCartCount(count);
-// },[cartProducts,cartCount]
-
-// )

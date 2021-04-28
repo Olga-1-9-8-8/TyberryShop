@@ -6,7 +6,7 @@ import Basket from './components/Basket/Basket.js';
 import Footer from './components/Footer/Footer.js';
 import Header from './components/Header/Header.js';
 import MainPageContent from './components/MainPageContent/MainPageContent.js';
-import Profile from './components/Profile/Profile.js';
+import Profile from './components/Profile/Registration/Profile.js';
 
 const Delivery = React.lazy(() => import('./components/Delivery/Delivery.js'));  // don't neet this in start bandle,
 
