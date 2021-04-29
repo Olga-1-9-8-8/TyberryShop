@@ -1,20 +1,15 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { applyMiddleware, createStore} from '@reduxjs/toolkit';
 import logger from 'redux-logger';
-import cartReducer from '../components/MainPageContent/Goods/Good/cartSlice';
-import goodsReducer from '../components/MainPageContent/Goods/goodsSlice';
-import sliderReducer from '../components/MainPageContent/Slider/sliderSlice';
-import orderReducer from '../components/Profile/PersonalProfilePage/personalProfileSlice';
-import userReducer from './userSlice';
+import { persistStore } from 'redux-persist'
+import rootReducer from './rootReducer'
 
+export const middlewares =[logger];
 
+export const store = createStore(rootReducer, applyMiddleware(...middlewares));
 
-export default configureStore({
-  reducer: {
-    slider: sliderReducer,
-    goods: goodsReducer,
-    cart: cartReducer,
-    order: orderReducer,
-    user: userReducer,
-  },
-  middleware:(getDefaultMiddleware) => getDefaultMiddleware().concat(logger)
-})
+export const persister = persistStore(store);
+
+export default {
+  store,
+  persister
+};
