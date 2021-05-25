@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react'; //exactly from react
 import App from './App';
-import ScrollToTop from './components/ScrollToTop.js';
+import { ScrollToTop } from './components/ScrollToTop.js';
 import { persister, store } from './redux/store';
 
 ReactDOM.render(

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import styles from './Search.module.css';
 
 
-const SearchForm = ()=>{
+export const SearchForm = ()=>{
 
     const[search, setSearch] = useState('');
 
@@ -59,5 +59,3 @@ const SearchForm = ()=>{
 
 
 
-
-export default SearchForm;

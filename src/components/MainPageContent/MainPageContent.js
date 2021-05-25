@@ -1,17 +1,17 @@
 import { React, useState } from 'react';
-import Goods from './Goods/Goods.js';
+import { Goods } from './Goods/Goods.js';
 import styles from './MainPageContent.module.css';
-import Slider from './Slider/Slider.js';
+import { Slider } from './Slider/Slider.js';
 
-const MainPageContent = () => {
+export const MainPageContent = () => {
     
-    const[isShort, setShot] = useState(true);
-    const[isShortTitle, setShotTitle] = useState(true);
+    const[isShort, setIsShot] = useState(true);
+    const[isShortTitle, setIsShortTitle] = useState(true);
     
 
     const toggleSetShort = () =>{
-        setShot(!isShort);
-        setShotTitle(!isShortTitle);
+        setIsShot(!isShort);
+        setIsShortTitle(!isShortTitle);
     }
 
     return (
@@ -22,13 +22,6 @@ const MainPageContent = () => {
                     <h3>Возможно, Вам Понравится:</h3>
                     <Goods />
                 </div>
-                {/* <div className={styles.buttonPreference}>
-                    <Button text = 'Показать ещё'/>
-                    <div className={styles.wrapperArrow}>
-                        <FontAwesomeIcon icon={faArrowDown} size="xs" color = "rgba(4, 18, 31, 0.8)"/>
-                    </div>
-                
-                </div> */}
             </div>
             <div className={styles.textBlockWrapper}>
                     <h3 className={styles.textBlockTitle}>Высокое качество и быстрая доставка</h3>
@@ -53,5 +46,3 @@ const MainPageContent = () => {
 
     )
 }
-
-export default MainPageContent;

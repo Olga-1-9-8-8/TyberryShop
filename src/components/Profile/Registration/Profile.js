@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import app, { userProfileHandler } from '../../../firebase';
 import { selectCurrentUser, setCurrentUser } from "../../../redux/userSlice.js";
-import PersonalProfile from "../PersonalProfilePage/PersonalProfile.js";
+import { PersonalProfile } from "../PersonalProfilePage/PersonalProfile.js";
 import { selectOrderValue } from "../PersonalProfilePage/personalProfileSlice.js";
-import Button from "./Button/Button.js";
+import { Button } from "./Button/Button.js";
 import styles from "./Profile.module.css";
-import ProfileInput from "./ProfileInput/ProfileInput.js";
+import { ProfileInput } from "./ProfileInput/ProfileInput.js";
 
 
 
-const Profile = () => {
+export const Profile = () => {
 
     const dispatch =  useDispatch();
     const order = useSelector(selectOrderValue);
@@ -150,7 +150,6 @@ const Profile = () => {
     )
 };
        
-export default Profile;
 
 
 

@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom';
-import Logo from '../Header/Logo/Logo.js';
+import { Logo } from '../Header/Logo/Logo.js';
 import styles from './Footer.module.css';
 
 
 
-const Footer = () => {
+export const Footer = () => {
 
     return (
     <footer className={styles.footer}>
@@ -71,5 +71,3 @@ const Footer = () => {
     </footer>
     )
 }
-
-export default Footer;

@@ -4,13 +4,13 @@ import { IconContext } from 'react-icons';
 import * as AntIcons from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import styles from './Navbar.module.css';
-import NavbarItem from "./NavbarItem/NavbarItem.js";
+import { NavbarItem } from "./NavbarItem/NavbarItem.js";
 
 
-const Navbar = () => {
+export const Navbar = () => {
+
     let menuReference =useRef();
  
-
     const [sidebar,setSidebar] = useState(false);
 
     const showMenu = () =>{
@@ -58,7 +58,7 @@ const Navbar = () => {
 
 
 
-export default Navbar;
+
 
 
 

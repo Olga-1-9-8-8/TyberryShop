@@ -4,11 +4,11 @@ import { FaTimes } from "react-icons/fa";
 import { useDispatch } from 'react-redux';
 import { removeToCart } from '../../MainPageContent/Goods/Good/cartSlice.js';
 import styles from './BasketItem.module.css';
-import BasketItemCounter from './BasketItemCounter/BasketItemCounter';
+import { BasketItemCounter } from './BasketItemCounter/BasketItemCounter';
 
 
 
-const BasketItem = ({product}) => {
+export const BasketItem = ({product}) => {
      
     const dispatch = useDispatch();
 
@@ -38,5 +38,3 @@ const BasketItem = ({product}) => {
         </div>
     )
 }
-
-export default BasketItem;

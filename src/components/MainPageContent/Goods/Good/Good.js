@@ -5,7 +5,7 @@ import styles from "./Good.module.css";
 
 
 
-const Good = ({good}) => {
+export const Good = ({good}) => {
 
   
 
@@ -48,8 +48,6 @@ const Good = ({good}) => {
     
     )
 }
-
-export default Good;
 
 
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 
-const NavbarItem = (props) => {
+export const NavbarItem = (props) => {
 
     return(
              <>
@@ -20,10 +20,6 @@ const NavbarItem = (props) => {
     )
 }
 
-
-
-
-export default NavbarItem;
 
 
 

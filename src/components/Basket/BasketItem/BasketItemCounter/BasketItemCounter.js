@@ -5,7 +5,7 @@ import styles from './BasketItemCounter.module.css';
 
 
 
-const BasketItemCounter = ({product}) => {
+export const BasketItemCounter = ({product}) => {
 
   
   const dispatch = useDispatch(); // get dispatch from store
@@ -55,5 +55,3 @@ const BasketItemCounter = ({product}) => {
     </div>
     )
 }
-
-export default BasketItemCounter;

@@ -4,9 +4,9 @@ import { useHistory } from 'react-router-dom';
 import { removeAllCarts, selectCartValue } from '../MainPageContent/Goods/Good/cartSlice';
 import { addToOrder } from '../Profile/PersonalProfilePage/personalProfileSlice.js';
 import styles from './Basket.module.css';
-import BasketItem from './BasketItem/BasketItem';
+import { BasketItem } from './BasketItem/BasketItem';
 
-const Basket = () => {
+export const Basket = () => {
 
 
     const dispatch =  useDispatch();
@@ -15,7 +15,7 @@ const Basket = () => {
 
     const[totalCount, setTotalCount] = useState(0);
     const[totalPrice, setTotalPrice] = useState(0);
-    const[totalPriceBeforeSale, settotalPriceBeforeSale] = useState(0);
+    const[totalPriceBeforeSale, setTotalPriceBeforeSale] = useState(0);
     const[totalSale, setTotalSale] = useState(0);
 
     useEffect(() => {
@@ -34,11 +34,11 @@ const Basket = () => {
 
         setTotalCount(items);
         setTotalPrice(price); 
-        settotalPriceBeforeSale(priceBeforeSale); 
+        setTotalPriceBeforeSale(priceBeforeSale); 
         setTotalSale(sale); 
 
     }, [cartProducts, totalPrice, setTotalPrice, totalCount, setTotalCount,
-        totalPriceBeforeSale, settotalPriceBeforeSale,totalSale, setTotalSale])
+        totalPriceBeforeSale, setTotalPriceBeforeSale,totalSale, setTotalSale])
 
     const addOrder = (e) =>{
         e.preventDefault();
@@ -101,6 +101,5 @@ const Basket = () => {
     )
 }
 
-export default Basket;
 
 

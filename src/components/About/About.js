@@ -1,12 +1,12 @@
 import { Timeline } from 'antd';
 import 'antd/dist/antd.css';
 import styles from './About.module.css';
-import AboutItem from './AboutItem/AboutItem';
+import { AboutItem } from './AboutItem/AboutItem';
 
 
 
 
-const About = () => {
+export const About = () => {
     return (
     <section className={styles.aboutCompanyWrapper}>
         <h2 className={styles.aboutCompanyTitle}>О Компании</h2>
@@ -29,7 +29,3 @@ const About = () => {
     );
 
 }
-
-          
-
-export default About;

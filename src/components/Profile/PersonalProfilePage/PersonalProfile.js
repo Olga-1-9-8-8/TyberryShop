@@ -5,7 +5,7 @@ import styles from "./PersonalProfile.module.css";
 import { selectOrderValue } from './personalProfileSlice.js';
 
 
-const PersonalProfile = ({logOut,email}) => {
+export const PersonalProfile = ({logOut,email}) => {
 
 
     const order = useSelector(selectOrderValue)
@@ -70,7 +70,7 @@ const PersonalProfile = ({logOut,email}) => {
     )
 };
        
-export default PersonalProfile;
+ 
 
 
 

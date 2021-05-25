@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { arrGoods, sortProducts } from "../Goods/goodsSlice.js";
 import styles from "./Filter.module.css";
 
-const Filter = () => {
+export const Filter = () => {
     
     let goods = useSelector(arrGoods);
     const dispatch = useDispatch();
@@ -34,4 +34,3 @@ const Filter = () => {
     )
 }
 
-export default Filter

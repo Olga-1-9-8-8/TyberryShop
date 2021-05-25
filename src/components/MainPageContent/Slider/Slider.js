@@ -7,7 +7,7 @@ import { arrSlider, sliderSlice } from './sliderSlice.js';
 
 
 
-const Slider = () => {
+export const Slider = () => {
     
     const slideres = useSelector(arrSlider);
     const [current,setCurrent] = useState(0);
@@ -46,7 +46,7 @@ const Slider = () => {
     )
 }
 
-export default Slider;
+
 
 
 

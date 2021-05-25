@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { selectCartValue } from '../../MainPageContent/Goods/Good/cartSlice.js';
 import styles from './Navigation.module.css';
-import NavigationItem from './NavigationItem/NavigationItem.js';
+import { NavigationItem } from './NavigationItem/NavigationItem.js';
 
-const Navigation = (props)=>{
+export const Navigation = (props)=>{
     const cartProducts = useSelector(selectCartValue);
     const [cartCount,setCartCount] = useState(0);
 
@@ -32,6 +32,3 @@ const Navigation = (props)=>{
     )
 }
 
-
-
-export default Navigation;
