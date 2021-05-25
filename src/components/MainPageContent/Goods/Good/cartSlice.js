@@ -10,8 +10,7 @@ export const cartSlice = createSlice({
     addToCart: (state,action) => { 
       //check if good is in the cart already
       const alreadyInCart = state.cartValues.find((item) =>
-      item.id === action.payload.id ? true : false
-      )
+      item.id === action.payload.id)
       if(alreadyInCart){
         state.cartValues.map(item => item.id === action.payload.id ? (++item.count) : item);
       }
@@ -24,7 +23,7 @@ export const cartSlice = createSlice({
     },
 
     updateCountInItem :(state,action)=>{
-        state.cartValues.map(item => item.id === action.payload.id ?
+        state.cartValues.forEach(item => item.id === action.payload.id ?
           (item.count = +action.payload.count): item)
     },
     removeAllCarts: (state,action) =>{
