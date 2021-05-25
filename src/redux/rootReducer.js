@@ -3,14 +3,12 @@ import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import cartReducer from '../components/MainPageContent/Goods/Good/cartSlice';
 import goodsReducer from '../components/MainPageContent/Goods/goodsSlice';
-import sliderReducer from '../components/MainPageContent/Slider/sliderSlice';
 import orderReducer from '../components/Profile/PersonalProfilePage/personalProfileSlice';
 import userReducer from './userSlice';
 
 
 
 export const rootReducer = combineReducers({
-    slider: sliderReducer,
     goods: goodsReducer,
     cart: cartReducer,
     order: orderReducer,

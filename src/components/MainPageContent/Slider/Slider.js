@@ -1,29 +1,27 @@
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import img1 from '../../../pictures/slider1.jpg';
+import img2 from '../../../pictures/slider2.jpg';
+import img3 from '../../../pictures/slider3.jpg';
 import styles from "./Slider.module.css";
-import { arrSlider, sliderSlice } from './sliderSlice.js';
 
 
 
 export const Slider = () => {
     
-    const slideres = useSelector(arrSlider);
+    const slideres = [img1,img2,img3];
     const [current,setCurrent] = useState(0);
     const length = slideres.length;
 
-    const nextSlide = () =>{
-        setCurrent(current === length-1 ? 0 : current+1)
-    }
 
-    const previosSlide = () =>{
-        setCurrent(current === 0 ? length-1 : current-1)
-    }
+    const nextSlide = () => {
+        setCurrent(current === length - 1 ? 0 : current + 1)
+    };
+    const previosSlide = () => {
+        setCurrent(current === 0 ? length - 1 : current - 1)
+    };
 
-    if(sliderSlice.length <= 0){
-        return null;
-    }
 
     return (
         
