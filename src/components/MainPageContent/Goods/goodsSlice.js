@@ -197,15 +197,15 @@ export const goodsSlice = createSlice({
   },
   reducers: {
     sortProducts: (state,action) => {
-      state.goodsItems.sort((a,b) =>
-      action.payload === 'Min'
-         ? ((a.price-(a.price*a.sale)) > (b.price-(b.price*b.sale)) ? 1:-1)
-         :action.payload === 'Max'
-         ? ((a.price-(a.price*a.sale)) < (b.price-(b.price*b.sale)) ? 1:-1)
-         : a.id - b.id
-      )  
-
-      
+      state.goodsItems.sort((a,b) =>{
+        if(action.payload === 'Min') {
+         return (a.price-(a.price*a.sale)) > (b.price-(b.price*b.sale)) ? 1:-1 ;  
+        } else if (action.payload === 'Max') {
+         return (a.price-(a.price*a.sale)) < (b.price-(b.price*b.sale)) ? 1:-1; 
+        } else {
+        return a.id - b.id
+        }
+      }) 
     },
   }
 })
@@ -213,6 +213,11 @@ export const goodsSlice = createSlice({
 export const arrGoods = state => state.goods.goodsItems;
 export const {sortProducts} = goodsSlice.actions
 export default goodsSlice.reducer
+
+
+ 
+ 
+
 
 
 
