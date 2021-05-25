@@ -14,7 +14,7 @@ export const Navbar = () => {
     const [sidebar,setSidebar] = useState(false);
 
     const showMenu = () =>{
-        setSidebar(!sidebar);
+        setSidebar(sidebar => !sidebar);
     }
 
    useEffect(() => {

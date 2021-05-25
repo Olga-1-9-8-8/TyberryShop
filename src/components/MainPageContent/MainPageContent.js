@@ -10,8 +10,8 @@ export const MainPageContent = () => {
     
 
     const toggleSetShort = () =>{
-        setIsShot(!isShort);
-        setIsShortTitle(!isShortTitle);
+        setIsShot(isShort => !isShort);
+        setIsShortTitle(isShortTitle => !isShortTitle);
     }
 
     return (

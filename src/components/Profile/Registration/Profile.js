@@ -127,7 +127,7 @@ export const Profile = () => {
                             <Button handler={logInHandler}  text='Войти'/>
                             <p> 
                                 <span className ={styles.accountMessage}> Если у Вас нет аккаунта? </span>
-                                <span className ={styles.accountMessageTitle} onClick={()=>setAlreadyHasAccount(!alreadyHasAccount)}>Зарегистрируйтесь</span>
+                                <span className ={styles.accountMessageTitle} onClick={()=>setAlreadyHasAccount(alreadyHasAccount => !alreadyHasAccount)}>Зарегистрируйтесь</span>
                             </p>
                         </>
                     ):(
@@ -135,7 +135,7 @@ export const Profile = () => {
                             <Button  handler={signUpHandler}  text='Зарегистрироваться'/>
                             <p> 
                                 <span className ={styles.accountMessage}> Уже есть аккаунт? </span>
-                                <span className ={styles.accountMessageTitle}onClick={()=>setAlreadyHasAccount(!alreadyHasAccount)}>Войти</span>
+                                <span className ={styles.accountMessageTitle}onClick={()=>setAlreadyHasAccount(alreadyHasAccount => !alreadyHasAccount)}>Войти</span>
                             </p>
                         </>
                     )
