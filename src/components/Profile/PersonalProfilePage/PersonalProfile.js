@@ -8,8 +8,7 @@ import { selectOrderValue } from './personalProfileSlice.js';
 export const PersonalProfile = ({logOut,email}) => {
 
 
-    const order = useSelector(selectOrderValue)
-
+    const order = useSelector(selectOrderValue);
     
     return(
         <section className = {styles.personalProfile}>
@@ -75,4 +74,4 @@ export const PersonalProfile = ({logOut,email}) => {
 
 
 
-
+//{order.reduce((accomulator,item) =>accomulator + item.totalCountOrder,0)}

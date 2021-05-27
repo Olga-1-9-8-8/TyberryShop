@@ -26,8 +26,8 @@ export const cartSlice = createSlice({
         state.cartValues.forEach(item => item.id === action.payload.id ?
           (item.count = +action.payload.count): item)
     },
-    removeAllCarts: (state,action) =>{
-      state.cartValues = action.payload;
+    removeAllCarts: (state) =>{
+      state.cartValues = [];
     },
    
   }

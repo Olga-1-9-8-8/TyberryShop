@@ -29,7 +29,7 @@ export const Basket = () => {
             items += item.count;
             price += (item.price - (item.price*item.sale)) * item.count;
             priceBeforeSale += item.price * item.count;
-            sale += item.sale * item.price;
+            sale += item.sale * priceBeforeSale;
         })
 
         setTotalCount(items);
@@ -48,58 +48,54 @@ export const Basket = () => {
             totalCountOrder: totalCount,
         }
         dispatch(addToOrder(order));
-        dispatch(removeAllCarts([]))
+        dispatch(removeAllCarts())
+    }
+
+    
+    if (cartProducts.length === 0) { 
+        return (
+            <div className={styles.basketNothing}> В вашей корзине пока ничего нет.</div>
+        )
     }
 
     return (
-        <>
-        {cartProducts.length > 0 ? 
-        (    <form className={styles.basket}>
-                <h2 className={styles.basketTitle}>Заказ</h2>
-                <div className={styles.basketWrapper}>
-                    <div>
-                        {cartProducts.map((product) => (
-                            <BasketItem key={product.id} product={product} />
-                        ))}
-                    </div>
-
-                    <div className={styles.basketResultWrapper}>
-
-                        <div className={styles.basketResultItem}>
-                            <span>Итого</span>
-                            <span>{totalPrice} &#8381;</span>
-                        </div>
-                        <div className={styles.basketResultItem}>
-                            <span>Товары,{totalCount} шт.</span>
-                            <span> {totalPriceBeforeSale} &#8381;</span>
-                        </div>
-                        <div className={styles.basketResultItem}>
-                            <span>Скидка</span>
-                            <span>{totalSale} &#8381; </span>
-                        </div>
-                        <div className={styles.basketResultItem}>
-                            <span>Доставка</span>
-                            <span>Бесплатно</span>
-                        </div>
-
-                        <div className={styles.basketResultButtonWrapper}>
-                            <button onClick = {addOrder} className={styles.basketResultButton}>Заказать</button>
-                        </div>
-
-
-                    </div>
-
+        <form className={styles.basket}>
+            <h2 className={styles.basketTitle}>Заказ</h2>
+            <div className={styles.basketWrapper}>
+                <div>
+                    {cartProducts.map((product) => (
+                        <BasketItem key={product.id} product={product} />
+                    ))}
                 </div>
 
-            </form> 
-        ):
-        (<div className={styles.basketNothing}> В вашей корзине пока ничего нет.</div>)
-        }   
-        </>
+                <div className={styles.basketResultWrapper}>
+                <div className={styles.basketResultItem}>
+                    <span>Итого</span>
+                    <span>{totalPrice} &#8381;</span>
+                </div>
+                <div className={styles.basketResultItem}>
+                    <span>Товары,{totalCount} шт.</span>
+                    <span> {totalPriceBeforeSale} &#8381;</span>
+                </div>
+                <div className={styles.basketResultItem}>
+                    <span>Скидка</span>
+                    <span>{totalSale} &#8381; </span>
+                </div>
+                <div className={styles.basketResultItem}>
+                    <span>Доставка</span>
+                    <span>Бесплатно</span>
+                </div>
+
+                <div className={styles.basketResultButtonWrapper}>
+                    <button onClick = {addOrder} className={styles.basketResultButton}>Заказать</button>
+                </div>
 
 
+            </div>
+
+            </div>
+        
+        </form> 
     )
+
 }
-
-
-

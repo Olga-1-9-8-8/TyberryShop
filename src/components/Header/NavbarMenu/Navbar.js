@@ -18,7 +18,7 @@ export const Navbar = () => {
     }
 
    useEffect(() => {
-       let handler = (e) => {
+       const handler = (e) => {
             if(!menuReference.current.contains(e.target)){
              setSidebar(false);
             }
@@ -30,7 +30,7 @@ export const Navbar = () => {
             document.removeEventListener('mousedown',handler)
         }
        
-   })
+   },[])  // [] -> empty includes, becouse this effect called only when mounting/unmounting
 
 
     return(

@@ -20,16 +20,15 @@ export const BasketItemCounter = ({product}) => {
    }
    const decreaseHandler = async(e) => {
       e.preventDefault();
-      setInputValue(currentCountValue.current.value-1);
+      setInputValue(inputValue => inputValue-1);
       if(currentCountValue.current.value === 1) return; 
       dispatch(updateCountInItem({id:product.id,count:currentCountValue.current.value-1}) ) 
    }
 
    const increaseHandler = async(e) => {
       e.preventDefault();
-      setInputValue(+currentCountValue.current.value+1);
+      setInputValue(inputValue => inputValue+1)
       dispatch(updateCountInItem({id:product.id,count:+currentCountValue.current.value+1}) )
-      
    }
   
 

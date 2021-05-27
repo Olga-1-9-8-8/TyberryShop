@@ -11,10 +11,7 @@ export const Navigation = (props)=>{
 
 
     useEffect( () => {
-        let count = 0;
-        cartProducts.forEach(item =>{
-            count += item.count
-        })
+        let count = cartProducts.reduce((accomulator, current) => accomulator + current.count,0)
         setCartCount(count);
     },[cartProducts,cartCount]
 
