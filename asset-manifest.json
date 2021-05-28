@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/TyberryShop/static/css/main.31247429.chunk.css",
-    "main.js": "/TyberryShop/static/js/main.21990280.chunk.js",
-    "main.js.map": "/TyberryShop/static/js/main.21990280.chunk.js.map",
+    "main.js": "/TyberryShop/static/js/main.ea99f1cf.chunk.js",
+    "main.js.map": "/TyberryShop/static/js/main.ea99f1cf.chunk.js.map",
     "runtime-main.js": "/TyberryShop/static/js/runtime-main.d6a0ede8.js",
     "runtime-main.js.map": "/TyberryShop/static/js/runtime-main.d6a0ede8.js.map",
     "static/css/2.b6803305.chunk.css": "/TyberryShop/static/css/2.b6803305.chunk.css",
-    "static/js/2.0e0d4353.chunk.js": "/TyberryShop/static/js/2.0e0d4353.chunk.js",
-    "static/js/2.0e0d4353.chunk.js.map": "/TyberryShop/static/js/2.0e0d4353.chunk.js.map",
+    "static/js/2.8d12b30b.chunk.js": "/TyberryShop/static/js/2.8d12b30b.chunk.js",
+    "static/js/2.8d12b30b.chunk.js.map": "/TyberryShop/static/js/2.8d12b30b.chunk.js.map",
     "static/css/3.cd9eaefe.chunk.css": "/TyberryShop/static/css/3.cd9eaefe.chunk.css",
     "static/js/3.ef6be969.chunk.js": "/TyberryShop/static/js/3.ef6be969.chunk.js",
     "static/js/3.ef6be969.chunk.js.map": "/TyberryShop/static/js/3.ef6be969.chunk.js.map",
@@ -15,7 +15,7 @@
     "static/css/2.b6803305.chunk.css.map": "/TyberryShop/static/css/2.b6803305.chunk.css.map",
     "static/css/3.cd9eaefe.chunk.css.map": "/TyberryShop/static/css/3.cd9eaefe.chunk.css.map",
     "static/css/main.31247429.chunk.css.map": "/TyberryShop/static/css/main.31247429.chunk.css.map",
-    "static/js/2.0e0d4353.chunk.js.LICENSE.txt": "/TyberryShop/static/js/2.0e0d4353.chunk.js.LICENSE.txt",
+    "static/js/2.8d12b30b.chunk.js.LICENSE.txt": "/TyberryShop/static/js/2.8d12b30b.chunk.js.LICENSE.txt",
     "static/media/box.7fd9c20e.svg": "/TyberryShop/static/media/box.7fd9c20e.svg",
     "static/media/Footer.module.css": "/TyberryShop/static/media/imageFooter.e266a0fe.jpg",
     "static/media/slider1.b461ead4.jpg": "/TyberryShop/static/media/slider1.b461ead4.jpg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.d6a0ede8.js",
     "static/css/2.b6803305.chunk.css",
-    "static/js/2.0e0d4353.chunk.js",
+    "static/js/2.8d12b30b.chunk.js",
     "static/css/main.31247429.chunk.css",
-    "static/js/main.21990280.chunk.js"
+    "static/js/main.ea99f1cf.chunk.js"
   ]
 }
