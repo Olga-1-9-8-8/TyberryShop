@@ -1,10 +1,12 @@
+.navbar{
+  cursor: pointer;
+}
 .navbar:focus{
   outline: none;
 }
 
 
 .navbarIcon{
-  cursor: pointer;
   font-size: 3rem;
  
 }
@@ -34,4 +36,5 @@
   padding: 0;
   margin-top: 60px;
   width: 100%;
+  cursor: pointer;
 }

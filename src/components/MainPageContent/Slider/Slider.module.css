@@ -4,7 +4,6 @@
   justify-content: center;
   position: relative;
   margin-top: 30px;
-
 }
 
 .slider img{
@@ -51,6 +50,11 @@
     opacity: 0;
 }
 
-.slide.active{
+.active{
+    width: 100%;
     opacity: 1;
 }
+
+
+
+

@@ -1,0 +1,60 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [ // configurations array
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "airbnb-typescript",
+        "airbnb/hooks",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [ //auto fixes part
+        "react",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "import/no-mutable-exports": "error", // forbids the use of mutable exports with var or let
+        "import/prefer-default-export": "off", // if one export, then should be default
+        "import/no-default-export": "off", // impossible default export
+        "import/no-namespace": "error", // impossible import * as x from 
+        "react/jsx-uses-vars": "error", // not use var
+        "react/react-in-jsx-scope": "off", // import react from react in each file
+        "react/requare-default-props": "off", // becouse for optional ts type
+        "react/function-component-definition": [ //  arrow-function for functional component defenition
+            "error",
+            {
+                "namedComponents": "arrow-function",
+                "unnamedComponents": "arrow-function"
+            }
+        ],
+        "no-param-reassign": 0, // change vareable parametr of function
+        "import/no-cycle": "off",
+        "react/prop-types": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-shadow": "off", //use outer variable, but in hook useSate we use (prev => prev ..do someting)
+        "prettier/prettier": "error",
+        "func-names": "off"
+    },
+    "globals": { // global object, witch we use in our code
+        "window": true,
+        "document": true
+    }
+}
