@@ -30,7 +30,7 @@ const Basket: React.FC = () => {
       items += item.count;
       price += (item.price - item.price * item.sale) * item.count;
       priceBeforeSale += item.price * item.count;
-      sale += item.sale * priceBeforeSale;
+      sale = priceBeforeSale - price;
     });
 
     setTotalCount(items);

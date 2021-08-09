@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-return-assign */
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { IProductItem } from '../../../../interfaces';
@@ -22,8 +23,7 @@ export const cartSlice = createSlice({
       );
       if (alreadyInCart) {
         state.cartValues.map(
-          (item) =>
-            item.id === action.payload.id ? (item.count += item.count) : item, // ++item.count -> esLint disallow
+          (item) => (item.id === action.payload.id ? ++item.count : item), // ++item.count -> esLint disallow
         );
       }
       if (!alreadyInCart) {

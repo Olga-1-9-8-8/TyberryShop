@@ -39,8 +39,8 @@
 
 .basketItemButton span{
     position: absolute;
-    top: -11px;
-    left: 10px;
+    left: 12px;
+    top: 2px;
 }
 .basketItemButton:first-child span{
     left: 14px;

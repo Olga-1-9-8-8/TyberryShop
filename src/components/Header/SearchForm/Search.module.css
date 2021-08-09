@@ -16,7 +16,7 @@
   border-radius: 27px;
   background: rgba(255,255,255,.2);
   cursor: pointer;
-  transition: background .5s ease 0s;
+  transition: .5s ease 0s;
 }
 
 input:hover {
@@ -33,7 +33,7 @@ input:focus {
 .icon{
   cursor: pointer;
   position: absolute;
-  left: 85%;
+  left: 95%;
   top: 30%;
   transition: .5s ease 0s;
 }

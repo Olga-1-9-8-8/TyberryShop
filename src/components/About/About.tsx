@@ -1,5 +1,3 @@
-import { Timeline } from 'antd';
-import 'antd/dist/antd.css';
 import styles from './About.module.css';
 import { AboutItem } from './AboutItem/AboutItem';
 
@@ -15,12 +13,12 @@ const About: React.FC = () => {
       </div>
       <div className={styles.payTermTitle}>
         <h4>Условия Оплаты</h4>
-        <Timeline>
-          <Timeline.Item>Любая платежная система Мира</Timeline.Item>
-          <Timeline.Item>Любой валютой Мир</Timeline.Item>
-          <Timeline.Item>Можно платить Картой</Timeline.Item>
-          <Timeline.Item>Можно платить Наличными</Timeline.Item>
-        </Timeline>
+        <ol className={styles.payTermList}>
+          <li>Любая платежная система Мира</li>
+          <li>Любой валютой Мир</li>
+          <li>Можно платить Картой</li>
+          <li>Можно платить Наличными</li>
+        </ol>
       </div>
     </section>
   );

@@ -10,12 +10,9 @@ interface Props {
 
 export const BasketItemCounter: React.FC<Props> = ({ product }) => {
   const dispatch = useDispatch(); // get dispatch from store
-
-  //   let currentCountValue = React.createRef();
-
   const ref = useRef<HTMLInputElement>(null);
 
-  const [inputValue, setInputValue] = useState(product.count); // здесь путаница строка vs число????
+  const [inputValue, setInputValue] = useState(product.count);
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(+e.target.value);
@@ -58,7 +55,6 @@ export const BasketItemCounter: React.FC<Props> = ({ product }) => {
         value={inputValue}
         onChange={onChangeHandler}
         className={styles.basketItemInput}
-        // ref={currentCountValue}
         ref={ref}
       />
 

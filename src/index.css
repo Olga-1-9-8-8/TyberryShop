@@ -17,16 +17,6 @@ code {
     monospace;
 }
 
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
 body,
 h1,
 h2,
@@ -43,7 +33,95 @@ dl,
 dd {
   margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+a {
+  background-color: transparent; 
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+a:active,
+a:hover{
+    outline: 0;
+}
+
+button,
+input {
+  overflow: visible; 
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  border: 0;
+}
+
+output {
+  display: inline-block;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+
 img {
   max-width: 100%;
   display: block;
+  /* vertical-align: middle; */
+  border-style: none;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%; 
+  margin-bottom: 0.5em;
+  padding: 0;
+  color: inherit; 
+  font-size: 1.5em;
+  line-height: inherit;
+  white-space: normal; 
+}
+
+input, button, select, optgroup, textarea {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
 }
